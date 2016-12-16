@@ -1,0 +1,15 @@
+<link rel="import"  href="../../bower_components/polymer/polymer.html">
+<link rel="import"  href="../square-style/square-style.html">
+
+<dom-module id="volumen-component">
+  <template>
+  <style include="square-style"></style>
+  <div class="container">
+    <label >Volumen</label>
+    <div class="units"> m <sup>3</sup> </div>
+    <input type="number" name="volumen" value="{{value::input}}">
+  </div>
+    
+  </template>
+  <script type="text/javascript" src="volumen-component.js"></script>
+</dom-module>

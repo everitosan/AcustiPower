@@ -1,0 +1,25 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/paper-button/paper-button.html">
+
+<dom-module id="plus-button">
+  <template>
+  <style is="custom-style">
+    .buttonContainer {
+      position: fixed;
+      right: 0;
+      bottom: 4.6px;
+    }
+    paper-button {
+      color: var(--app-white-color);
+      background-color: var(--app-primary-color);
+    }
+  </style>
+
+  <div class="buttonContainer">
+    <paper-button raised on-click="addCallback"> + </paper-button>
+  </div>
+
+    
+  </template>
+  <script type="text/javascript" src="plus-button.js"></script>
+</dom-module>

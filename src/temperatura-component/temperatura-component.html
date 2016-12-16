@@ -1,0 +1,16 @@
+<link rel="import"  href="../../bower_components/polymer/polymer.html">
+<link rel="import"  href="../square-style/square-style.html">
+
+<dom-module id="temperatura-component">
+  <template>
+    <style include="square-style"></style>
+
+    <div class="container">
+      <label >Temperatura</label>
+      <div class="units">  ºC </div>
+      <input type="number" name="temperatura" value="{{value::input}}">
+    </div>
+
+  </template>
+  <script type="text/javascript" src="temperatura-component.js"></script>
+</dom-module>
