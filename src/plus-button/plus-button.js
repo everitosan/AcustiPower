@@ -1,13 +1,1 @@
-Polymer({
-  is: "plus-button",
-  properties: {
-    type: {
-      type: String,
-      value: ""
-    }
-  },
-  addCallback: function() {
-    var eventName = 'add-'+this.type;
-    this.fire(eventName, {});
-  }
-});
+Polymer({is:"plus-button",properties:{type:{type:String,value:""}},addCallback:function(){var t="add-"+this.type;this.fire(t,{})}});

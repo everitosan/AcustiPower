@@ -1,4 +1,4 @@
-<link rel="import" href="../../bower_components/polymer/polymer.html">
+<html><head><link rel="import" href="../../bower_components/polymer/polymer.html">
 <link rel="import" href="../temperatura-component/temperatura-component.html">
 <link rel="import" href="../volumen-component/volumen-component.html">
 <link rel="import" href="../table-head/table-head.html">
@@ -6,7 +6,7 @@
 <link rel="import" href="../reverberante-row/reverberante-row.html">
 <link rel="import" href="styles.html">
 
-<dom-module id="camara-reverberante">  
+</head><body><dom-module id="camara-reverberante">  
   <template>
     <style include="camara-reverberante-styles"></style>
 
@@ -21,14 +21,12 @@
     </div>
     <div class="dataRows" hidden$="{{!isFull}}">
       <template is="dom-repeat" items="{{dataRows}}">
-        <reverberante-row 
-        temp="{{temperature}}",
-        vol="{{volume}}"
-         ></reverberante-row>
+        <reverberante-row temp="{{temperature}}" ,="" vol="{{volume}}"></reverberante-row>
       </template>
     </div>
     <plus-button type="reverberante"></plus-button>
     
   </template>
-  <script  type="text/javascript" src="camara-reverberante.js"></script>
+  <script type="text/javascript" src="camara-reverberante.js"></script>
 </dom-module>  
+</body></html>

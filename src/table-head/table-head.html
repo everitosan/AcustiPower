@@ -1,32 +1,10 @@
-<link rel="import" href="../../bower_components/polymer/polymer.html">
+<html><head><link rel="import" href="../../bower_components/polymer/polymer.html">
 
 
-<dom-module id="table-head">
+</head><body><dom-module id="table-head">
   <template>
 
-    <style type="text/css">
-      .row {
-        background: var(--app-primary-color);
-        display: flex;
-        height: 40px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-        position: relative;
-        z-index: 200;
-      }
-      .row .col {
-        flex: 1;
-        color: var(--app-white-color);
-        text-align: center;
-        font-size: 26px;
-        font-weight: 100;
-      }
-      .hDivider {
-        background: var(--app-primary-color-darker);
-        width: 1px;
-        height: 100%;
-        float: right;
-      }
-    </style>
+    <style type="text/css">.row{background:var(--app-primary-color);display:flex;height:40px;box-shadow:0 2px 4px rgba(0, 0, 0, 0.5);position:relative;z-index:200;}.row .col{flex:1;color:var(--app-white-color);text-align:center;font-size:26px;font-weight:100;}.hDivider{background:var(--app-primary-color-darker);width:1px;height:100%;float:right;}</style>
 
     <div class="row">
       <template is="dom-repeat" items="{{arrayTiles}}">
@@ -39,4 +17,4 @@
 
   </template>
   <script type="text/javascript" src="table-head.js"></script>
-</dom-module>
+</dom-module></body></html>
